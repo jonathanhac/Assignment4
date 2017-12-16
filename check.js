@@ -11,9 +11,10 @@ var pallet = document.createElement("div");
 var canva = document.createElement("div");
             canva.id ="drawer";
             canva.style.height = "500px";
-            canva.style.width = "500px";
+            canva.style.backgroundColor = "black";
+            canva.style.width = "500px" ;
             canva.style.border = "solid black 1px";
-            cana.style.margin =
+            canva.style.margin = "0px 0px 0px 11px";
             document.body.appendChild(canva);
 
 
@@ -74,6 +75,18 @@ var Palcolor5 = document.createElement("button");
         Palcolor5.setAttribute("value" ,"pink");
         Palcolor5.addEventListener("click" ,chcolor);
 
+var Gomme = document.createElement("button");
+        Gomme.id = "gomme";
+        document.getElementById("toolbar").appendChild(Gomme);
+        Gomme.style.height = "50px";
+        Gomme.style.width = "50px";
+        Gomme.style.backgroundColor = "white";
+        Gomme.style.margin = "50px 30px";
+        Gomme.setAttribute("value" ,"white");
+        Gomme.addEventListener("click" ,chcolor);
+       document.getElementById("clear").innerHTML += '<br>Eraser';
+
+
 var Buttonchsize = document.createElement("input");
         document.getElementById("toolbar").appendChild(Buttonchsize);
         Buttonchsize.id = "buttons_ize"
@@ -99,19 +112,23 @@ document.getElementById('barcolor3').style.display='inline-block';
 document.getElementById('barcolor4').style.display='inline-block';
 document.getElementById('barcolor1').style.display='inline-block';
 document.getElementById('buttons_ize').style.display='inline-block';
+document.getElementById('gomme').style.display='inline-block';
+document.getElementById('clear').style.display='inline-block';
 
 selectcolor ="black" ;
 
 var mousedown = false;
 
+Heightpaint  = "8px";
+Widthpaint ="8px";
 
     function souris(e)
 {
     if(mousedown){
         var paint = document.createElement("div");
         paint.id = "peinture";
-        paint.style.height  = "8px";
-        paint.style.width ="8px";
+        paint.style.height  = Heightpaint;
+        paint.style.width =Widthpaint;
         paint.style.backgroundColor = selectcolor ;
         paint.style.borderRadius = "50%";
         paint.style.position = "absolute";
@@ -144,10 +161,11 @@ canva.addEventListener("mouseup", mouseup);
     function chheight(){
         selectheight = this.input;
         console.log(Buttonchsize);
+        canva.style.height = selectheight ;
 }
 
     function chwidth(){
-selectwidth = this.type;
+       selectwidth = this.type;
 }
 
 
@@ -155,6 +173,3 @@ selectwidth = this.type;
         canva.innerHTML = " ";
     }
 
-    function chheight(){
-
-    }
