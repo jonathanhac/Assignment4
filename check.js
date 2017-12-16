@@ -11,7 +11,7 @@ var pallet = document.createElement("div");
 var canva = document.createElement("div");
             canva.id ="drawer";
             canva.style.height = "500px";
-            canva.style.backgroundColor = "black";
+            canva.style.backgroundColor = "white";
             canva.style.width = "500px" ;
             canva.style.border = "solid black 1px";
             canva.style.margin = "0px 0px 0px 11px";
@@ -84,7 +84,7 @@ var Gomme = document.createElement("button");
         Gomme.style.margin = "50px 30px";
         Gomme.setAttribute("value" ,"white");
         Gomme.addEventListener("click" ,chcolor);
-       document.getElementById("clear").innerHTML += '<br>Eraser';
+       document.getElementById("gomme").innerHTML += '<br>Eraser';
 
 
 var Buttonchsize = document.createElement("input");
@@ -92,7 +92,7 @@ var Buttonchsize = document.createElement("input");
         Buttonchsize.id = "buttons_ize"
         Buttonchsize.style.height = "50px";
         Buttonchsize.style.width = "50px";
-        Buttonchsize.style.margin = "50px 60px";
+        Buttonchsize.style.margin = "50px 60px ";
         Buttonchsize.setAttribute("type" ,"number");
         Buttonchsize.addEventListener("input",chheight);
 
