@@ -123,7 +123,6 @@ var buttonChange = document.createElement('button');
 var Clear = document.createElement("button");
         Clear.id = "clear";
         document.getElementById("toolbar").appendChild(Clear);
-        Clear.style.border = "solid black 1px";
         Clear.setAttribute("class","curve");
         Clear.setAttribute("class","btn-info");
         document.getElementById("clear").innerHTML += '<br>Clear';
