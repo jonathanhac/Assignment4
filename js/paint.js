@@ -27,7 +27,7 @@ var pallet = document.createElement("div");
 var canva = document.createElement("div");
             canva.id ="drawer";
             canva.style.height = "500px";
-            canva.style.backgroundColor = "lightgray";
+            canva.style.backgroundColor = "black";
             canva.style.width = 500+"px" ;
             canva.style.margin = "40px 0px 500px 500px";
             backgroundPage.appendChild(canva);
@@ -95,7 +95,7 @@ var Palcolor5 = document.createElement("button");
 var Gomme = document.createElement("button");
         Gomme.id = "gomme";
         document.getElementById("toolbar").appendChild(Gomme);
-        Gomme.setAttribute("value" ,"lightgray");
+        Gomme.setAttribute("value" ,"black");
         Gomme.addEventListener("click" ,chcolor);
 
 var ButtonChsize = document.createElement("input");
