@@ -1,16 +1,56 @@
 
-
+#title{
+font-family: 'Joti One', cursive;
+text-align:center;
+background-color: black;
+color:white;
+margin:0px 0px 0px 0px;
+}
 
 #toolbar{
-background: #8E0E00;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-Radius:10%;
+border : 3px solid black ;
+}
+
+#back_Page{
+background-image:url("back_2.png");
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+
+
+.btn-info{
+border-Radius:40%;
+display:inline-block;
+width:70px;
+height:60px;
+margin:40px 30px 0px 25px;
+}
+
+.btn-sky{
+color: #fff;
+background-color: #0bacd3;
+border-bottom:2px solid #098aa9;
+margin:40px 30px 0px 25px;
+}
+
+#gomme{
+background-image:url("eraser.png");
+background-repeat: no-repeat;
+background-size: auto;
+border-Radius:40%;
+display:inline-block;
+width:70px;
+height:60px;
+margin:40px 30px 0px 25px;
 
 }
 
-body{
-background: #fffc00;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+#buttons_ize{
+width:80px;
+border-Radius:40%;
+display:inline-block;
+height:60px;
+margin:20px 30px 0px 25px;
 }
