@@ -2,9 +2,9 @@
 
  // Initialiasation of the palett
 
- var h = window.innerHeight;
- var w = window.innerWidth;
- var backgroundPage = document.createElement("div");
+var h = window.innerHeight;
+var w = window.innerWidth;
+var backgroundPage = document.createElement("div");
                       backgroundPage.style.height = h+"px";
                       backgroundPage.id = "back_Page";
                       backgroundPage.style.width = w+"px";
